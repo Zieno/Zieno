@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Darker background on mouse-over */
+        .btn:hover {
+            background-color: RoyalBlue;
+        }
+    </style>
+    <style>
+        #card1 {
+            position: absolute;
+            top: 800px;
+            left: 0px;
+            width: 50%;
+            height: 20%;
+        }
+
+        #card2 {
+            position: absolute;
+            top: 800px;
+            left: 50%;
+            width: 50%;
+            height: 20%;
+        }
+
+        #card3 {
+            position: absolute;
+            top: 950px;
+            left: 0%;
+            width: 100%;
+            height: 10%;
+            background-color:orangered;
+        }
+
+        body {
+            background-image: url("fundal.jpg");
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            
+        }
+        .item-one
+        {
+            position: absolute;
+            left: 0px;
+            top:170px;
+        }
+        .item-two
+        {
+            position: absolute;
+            left:432px;
+        }
+        .item-three
+        {
+            position: absolute;
+            left:1553.4px;
+            top:170px;
+        }
+    </style>
+    <title>Liga Sogatilor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="autovit.html" style="color: orangered"><b>Liga Șogâților Auto</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="autovit.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Wishlist</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vehicule
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Masina.html">Masini</a>
+                        <a class="dropdown-item" href="Tractoare.html">Tractoare</a>
+                        <a class="dropdown-item" href="Tank.html">Tank-uri</a>
+                        <a class="dropdown-item" href="Camioane.html">Camioane</a>
+                        <a class="dropdown-item" href="NaveSpatiale.html">Nave spatiale</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Piese de schimb</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <center>
+        <h1>BINE ATI VENIT PE LIGA SOGATILOR AUTO</h1>
+    </center>
+    <center>
+        <p>aici va puteti gasi vehiculul dorit</p>
+    </center>
+    <br>
+    <div class="container">
+        <div class="item item-one" style="width: 18rem;">
+            <img src="2019-mclaren-senna-placement-1525123633.jpg" class="card-img-top" alt="GUCCI">
+            <div class="card-body">
+                <h5 style="text-align: center";class="card-title">RECOMANDAT</h5>
+                <p style="text-align: center";class="card-text"><b>Mclaren Senna</b> </p>
+                <center><a href="Mcleran.html" class="btn btn-primary">Pret Negociabil</a></center>
+            </div>
+        </div>
+        <center><video class="item item-two";controls autoplay muted width="1000px" controls>
+                <source src="28YaNKwHMnLOd2vJR7Mr22uMSqhdRa8wRPvYrUO4.mp4" type="video/mp4">
+            </video>
+        </center>
+        <div class="item item-three" style="width: 18rem;">
+            <img src="img_0031.jpg" class="card-img-top" alt="GUCCI">
+            <div class="card-body">
+                <h5 style="text-align: center";class="card-title">RECOMANDAT</h5>
+                <p style="text-align: center";class="card-text"><b>Trabant decapotabil</b></p>
+                <center><a href="trabantdecapotabil.html" class="btn btn-primary">Pret Negociabil</a></center>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="card1">
+        <center>
+            <h6>Ai nevoie de ajutor?</h6>
+            <h4><b>Relatii clienti</b></h4>
+            <img src="Telefon.png" style="width:50px "></img>
+            <telefon>0764 290 170</telefon>
+        </center>
+    </div>
+    <div id="card2">
+        <center>
+            <img src="image.jpg" style="width: 200px"> </img>
+            <p><i>Aplicatie Android coming soon...</i></p>
+        </center>
+    </div>
+    <div id="card3">
+        <center><a href="Termeni.html" style="color:black">Termeni si conditii</a></center>
+    </div>
+</body>
+
+</html>
