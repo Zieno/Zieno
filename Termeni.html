@@ -1,0 +1,116 @@
+﻿<html>
+
+<head>
+    <style>
+
+    </style>
+    <title>S-aud</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+
+    </script>
+
+</head>
+
+<body onload="startTime()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="autovit.html" style="color: orangered"><b>Liga Șogâților Auto</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="autovit.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Wishlist</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vehicule
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Masina.html">Masini</a>
+                        <a class="dropdown-item" href="Tractoare.html">Tractoare</a>
+                        <a class="dropdown-item" href="Tank.html">Tank-uri</a>
+                        <a class="dropdown-item" href="NaveSpatiale.html">Nave spatiale</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Piesedeschimb.html">Piese de schimb</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <center>
+        <div id="txt"></div>
+    </center>
+    <img src="251451-200.png" style="float:right" width="200" height="200" onclick="goBack()">
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <center>
+        <h1>Ne-am dori sa cititi la final ce am scris aici</h1>
+        <center>
+            <br>
+            <img src="S-aud.jpg" />
+            <h4>Hello, PepinTeen!
+                Suntem bucuroși să vă prezentăm noul nostru site: Liga Șogâților Auto! Ne-am gandit să venim cu ceva
+                nou, ceva uimitor, ceva de-a dreptul... MIROBOLANT!!!!... Așa că ne-am decis să bagam tankuri și nave
+                spațiale...
+                Deeci (fără deci), ne-am gândit la sufletele fiecăruia, și am adaugat și o rolă de scoci pentru Dacie
+                (în cazul în care nu mai este sârmă disponibilă sub șasiu). De asemenea, pentru cei care vor să se simtă
+                ca în World of Tanks,
+                am făcut rost de doua tankuri de cea mai bună calitate (1900-toamna), și aparent, o navă spațială s-a
+                prăbușit la noi pe arătură și, cu ajutorul magiei negre, poc nava e reparată. Cele trei forțe supreme
+                care dețin controlul acestei dimensiuni virtuale
+                sunt Fratele Șogâte Zieno aka Călin, Fratele Șogâte Taifun aka Cristi și Fratele Șogâte Ceoacă aka
+                Miăiță...
+                <br>
+                Ne bucuram ca am fost alesi in acest proiect si din pacate am ajuns la sfarsitul acestuia<br>
+                Daca nu exista acest proiect aceasta fratie nu mai exista,in tabara ne-am intalnit si ne-am imprietenit
+            </h4>
+
+
+</body>
+
+</html>
